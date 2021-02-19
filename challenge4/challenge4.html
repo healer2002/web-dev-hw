@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="icon"
+      sizes="57x57"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="challenge4.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="" id="input1">
+        <input class="input1" type="text" id="num1" />
+      </div>
+      <div class="" id="input2">
+        <input class="input2" type="text" id="num2" />
+      </div>
+      <div class="operators">
+        <button id="inc" class="btn btn-info button" onclick="add()">+</button>
+        <button id="dec" class="btn btn-danger button" onclick="sub()">
+          -
+        </button>
+        <button id="result" class="btn btn-secondary button" onclick="equal()">
+          =
+        </button>
+        <button id="div" class="btn btn-warning button" onclick="div()">
+          &divide;
+        </button>
+        <button id="time" class="btn btn-primary button" onclick="time()">
+          &times;
+        </button>
+        <button id="clear" class="btn btn-success button" onclick="reset()">
+          C
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="challenge4.js"></script>
+</html>
