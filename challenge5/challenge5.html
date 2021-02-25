@@ -69,7 +69,7 @@
 
     <!-- Add New Movie Form-->
     <div class="container">
-      <form class="mx-5 mb-5" onsubmit="">
+      <form class="mx-5 mb-5" onsubmit="return false">
         <h3 class="mb-2 mt-5">New Movie</h3>
         <div class="mb-3">
           <label for="" class="form-label">Movie Title</label>
@@ -79,12 +79,7 @@
           <label for="" class="form-label">Link to Poster Image</label>
           <input type="url" class="form-control" id="movieLink" />
         </div>
-        <button
-          type="submit"
-          class="btn btn-info col-1"
-          value="Submit"
-          onclick="userInput()"
-        >
+        <button type="submit" class="btn btn-info col-1" onclick="userInput()">
           Add
         </button>
       </form>
