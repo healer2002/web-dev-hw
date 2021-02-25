@@ -21,21 +21,21 @@ var mLink = [
   'https://www.vintagemovieposters.co.uk/wp-content/uploads/2019/11/IMG_2167-2.jpeg',
   'https://images-na.ssl-images-amazon.com/images/I/812cqC7FD6L._AC_SL1481_.jpg',
   'https://bloximages.chicago2.vip.townnews.com/kokomotribune.com/content/tncms/assets/v3/editorial/2/2e/22e7dc38-c649-11e8-8fb3-73f150ba304d/5bb375fd83314.image.jpg?resize=500%2C750'];
-  
-  document.getElementById('movie1').innerHTML = mName[0];
-  document.getElementById('movie2').innerHTML = mName[1];
-  document.getElementById('movie3').innerHTML = mName[2];
-  document.getElementById('movie4').innerHTML = mName[3];
-  document.getElementById('movie5').innerHTML = mName[4];
-  document.getElementById('movie6').innerHTML = mName[5];
-  document.getElementById('image1').src = mLink[0];
-  document.getElementById('image2').src = mLink[1];
-  document.getElementById('image3').src = mLink[2];
-  document.getElementById('image4').src = mLink[3];
-  document.getElementById('image5').src = mLink[4];
-  document.getElementById('image6').src = mLink[5];
 
-function display(){
+document.getElementById('movie1').innerHTML = mName[0];
+document.getElementById('movie2').innerHTML = mName[1];
+document.getElementById('movie3').innerHTML = mName[2];
+document.getElementById('movie4').innerHTML = mName[3];
+document.getElementById('movie5').innerHTML = mName[4];
+document.getElementById('movie6').innerHTML = mName[5];
+document.getElementById('image1').src = mLink[0];
+document.getElementById('image2').src = mLink[1];
+document.getElementById('image3').src = mLink[2];
+document.getElementById('image4').src = mLink[3];
+document.getElementById('image5').src = mLink[4];
+document.getElementById('image6').src = mLink[5];
+
+function display() {
   document.getElementById('movie1').innerHTML = mName[0];
   document.getElementById('movie2').innerHTML = mName[1];
   document.getElementById('movie3').innerHTML = mName[2];
@@ -50,7 +50,7 @@ function display(){
   document.getElementById('image6').src = mLink[5];
 }
 
-function userInput(){
+function userInput() {
   var title = document.getElementById("movieTitle").value;
   var link = document.getElementById("movieLink").value;
   mName.unshift(title);
@@ -59,5 +59,3 @@ function userInput(){
   mLink.pop();
   display();
 }
-
-// location.reload();
