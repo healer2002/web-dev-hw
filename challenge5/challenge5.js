@@ -50,4 +50,12 @@ function display() {
   document.getElementById('image6').src = mLink[5];
 }
 
-
+function userInput() {
+  var title = document.getElementById("movieTitle").value;
+  var link = document.getElementById("movieLink").value;
+  mName.unshift(title);
+  mName.pop();
+  mLink.unshift(link);
+  mLink.pop();
+  display();
+}
