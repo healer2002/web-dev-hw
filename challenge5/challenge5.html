@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Theatre</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      sizes="57x57"
+      href="https://icon-library.com/images/movie-icon-png/movie-icon-png-2.jpg"
+    />
+
+    <link rel="stylesheet" href="challenge5.css" />
+  </head>
+  <body class="container">
+    <div class="container mt-4 mb-4">
+      <h1>New & Popular</h1>
+    </div>
+    <!-- Display Movie List -->
+    <div class="row">
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image1" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie1"></h5>
+        </div>
+      </div>
+
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image2" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie2"></h5>
+        </div>
+      </div>
+
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image3" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie3"></h5>
+        </div>
+      </div>
+    </div>
+    <!-- Second Row -->
+    <div class="row">
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image4" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie4"></h5>
+        </div>
+      </div>
+
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image5" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie5"></h5>
+        </div>
+      </div>
+
+      <div class="card col-sm m-1 p-1" style="width: 18rem">
+        <img src="" class="card-img-top" id="image6" />
+        <div class="card-body">
+          <h5 class="card-title" id="movie6"></h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add New Movie Form-->
+    <div class="container">
+      <form class="mx-5 mb-5" onsubmit="">
+        <h3 class="mb-2 mt-5">New Movie</h3>
+        <div class="mb-3">
+          <label for="" class="form-label">Movie Title</label>
+          <input type="text" class="form-control" id="movieTitle" />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Link to Poster Image</label>
+          <input type="url" class="form-control" id="movieLink" />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-info col-1"
+          value="Submit"
+          onclick="userInput()"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="challenge5.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+</html>
